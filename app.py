@@ -108,8 +108,10 @@ if st.button("🎯 Get My Investor Profile"):
         chart = "Growth-Oriented_Investor_chart.png"
 
     st.subheader(f"Your Investor Profile: {profile}")
+    
     st.markdown(desc)
     st.markdown("**Recommended ETFs:**")
+    
     for etf in etfs:
         st.markdown(f"- {etf}")
 
