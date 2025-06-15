@@ -114,6 +114,6 @@ if st.button("🎯 Get My Investor Profile"):
     
     for etf in etfs:
         st.markdown(f"- {etf}")
-
+        
     st.image(chart, caption="Suggested Asset Allocation", use_container_width=True)
     st.success("Use these results to guide conversations with financial advisors or plan your portfolio.")
