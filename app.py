@@ -42,13 +42,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🎨 Investor Persona Profiler")
-st.markdown("Answer 15 thoughtful and fun questions to discover your **investor personality** and receive **ETF recommendations** with a lively visual chart!")
+st.title("🧭 Investor Persona Profiler")
+st.markdown("Answer 15 thoughtful and fun questions to discover your **investor personality** and receive tailored  **ETF recommendations** with a visual chart!")
 
 # Load the rest of the code from previously defined final_app_code
-# (We will inject this into the new app file now)
-st.title("🧭 Investor Persona Profiler")
-st.markdown("Answer 15 thoughtful questions to discover your investor personality and get tailored ETF suggestions.")
 
 questions = [
     {"question": "What is your primary investment objective?",
@@ -116,5 +113,5 @@ if st.button("🎯 Get My Investor Profile"):
     for etf in etfs:
         st.markdown(f"- {etf}")
 
-    st.image(chart, caption="Suggested Asset Allocation", use_column_width=True)
+    st.image(chart, caption="Suggested Asset Allocation", use_container_width=True)
     st.success("Use these results to guide conversations with financial advisors or plan your portfolio.")
